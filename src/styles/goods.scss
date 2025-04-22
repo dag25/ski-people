@@ -1,0 +1,108 @@
+.goods {
+  padding: 40px 0;
+
+  @media (min-width: 1024px) {
+    padding: 60px 0;
+  }
+}
+.goods__title {
+  margin-bottom: 24px;
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 24px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 32px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 40px;
+  }
+}
+.goods__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 32px 8px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 32px 10px;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
+    gap: 40px 16px;
+  }
+
+  @media (min-width: 1040px) {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 32px 10px;
+  }
+}
+
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.card__link {
+  margin-bottom: 12px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 16px;
+  }
+}
+.card__image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.card__like-button {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 12px;
+  color: #1c1c1c;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 37px;
+  }
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    margin-bottom: 18px;
+  }
+}
+.card__info-title {
+  font-size: 12px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+.card__info-price {
+  font-size: 16px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+.card__button {
+  padding: 12px 24px;
+  border: 1px solid #0044f0;
+  border-radius: 32px;
+  color: #0044f0;
+}

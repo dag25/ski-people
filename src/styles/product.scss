@@ -1,0 +1,140 @@
+.product {
+  padding: 24px 0 60px;
+}
+.product__container {
+
+}
+.product__title {
+  margin-bottom: 24px;
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 32px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 40px;
+  }
+}
+.product__description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (min-width: 768px) {
+    gap: 40px;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  @media (min-width: 1440px) {
+    gap: 16px;
+  }
+}
+.product__slider {
+
+}
+.product__slider-image {
+  width: 100%;
+  min-height: 236px;
+  border-radius: 16px;
+  object-fit: cover;
+
+  @media (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 16px;
+  }
+}
+.product__slider-thumbnails {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 14px;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 12px;
+  }
+
+  @media (min-width: 1440px) {
+    gap: 16px;
+  }
+}
+.product__info {
+  color: #1c1c1c;
+}
+.product__info-price {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+.product__info-id {
+  margin-bottom: 24px;
+  padding: 4px 8px;
+  border-radius: 32px;
+  font-size: 12px;
+  background-color: #eeeff2;
+  display: inline-block;
+
+  @media (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 24px;
+  }
+}
+.product__info-title {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.product__info-table {
+}
+.product__table {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.product__table-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeff2;
+}
+.product__table-item {
+  padding: 8px 0;
+  color: #969eae;
+
+  &:last-child {
+    color: #1c1c1c;
+  }
+}
+.info-buttons {
+  display: flex;
+  gap: 12px;
+}
+.info-buttons__to-cart {
+  width: 100%;
+  background-color: #0044f0;
+  border: 1px solid #0044f0;
+  border-radius: 32px;
+  padding: 12px 24px;
+  color: #fff;
+}
+.info-buttons__like {
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.slider-thumbnails__item {
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+}

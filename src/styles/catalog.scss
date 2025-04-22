@@ -1,0 +1,39 @@
+.catalog {
+  overflow-x: hidden;
+  padding-bottom: 20px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+
+  @media (min-width:1440px) {
+    padding-bottom: 40px;
+  }
+}
+
+.catalog__list {
+  display: flex;
+  gap: 4px;
+}
+.catalog__item {
+
+}
+.catalog__link {
+  display: block;
+  align-content: center;
+  padding: 11px 14px 13px;
+  background-color: #eeeff2;
+  border-radius: 32px;
+  color: #969eae;
+
+  &--active {
+    background-color: #0044f0;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: #0044f0;
+    color: #fff;
+    transition: color .34s ease-in-out, background-color .34s ease-in-out;
+  }
+}

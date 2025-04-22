@@ -1,0 +1,23 @@
+.breadcrumb {
+}
+.breadcrumb__navigation {
+
+}
+.breadcrumb__list {
+  display: flex;
+  gap: 19px;
+  color: #969eae;
+}
+.breadcrumb__item {
+  position: relative;
+  &:not(:last-child)::after {
+    content: '>';
+    position: absolute;
+    top: 0;
+    margin-left: 6px;
+  }
+}
+
+.breadcrumb__link:hover {
+  color: #0044f0;
+}
